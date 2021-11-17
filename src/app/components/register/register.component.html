@@ -1,0 +1,75 @@
+<div class="mm">
+  <div class="container">
+      <div class="card o-hidden border-0 shadow-lg my-5">
+        <div class="card-body p-0">
+          <!-- Nested Row within Card Body -->
+          <div class="row">
+            <img class="col-lg-5" src="assets/img/register.svg">
+            <div class="col-lg-7">
+              <div class="p-5">
+                <div class="text-center">
+                  <h1 class="h4 text-gray-900 mb-4">Créer un compte!</h1>
+                </div>
+<form class="user" [formGroup]="registerForm" (ngSubmit)="register()">
+                  <div class="form-group row">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                      <input type="text" name="name" formControlName="name" placeholder="Entrée votre Nom ..." class="form-control form-control-user">
+          <div class="text-danger" *ngIf="!name.valid && name.touched">
+            <small *ngIf="name.errors.required"> Nom obligatoire</small>
+            <small *ngIf="name.errors.minlength">Name invalide</small>
+          </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <input type="text" name="username" formControlName="username" class="form-control form-control-user" placeholder="Entrée Nom d'utilisateur...">
+                      <div class="text-danger" *ngIf="!username.valid && username.touched">
+                        <small *ngIf="username.errors.required">Username obligatoire </small>
+                        <small *ngIf="username.errors.pattern">Username invalide</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                      <input type="email" name="email" formControlName="email" class="form-control form-control-user" placeholder="example@example.com">
+      <div class="text-danger" *ngIf="!email.valid && email.touched">
+        <small *ngIf="email.errors.required">Email obligatoire</small>
+        <small *ngIf="email.errors.email">Email invalide</small>
+      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <input type="password" name="password" formControlName="password"  placeholder="Mot de passe" class="form-control form-control-user">
+                      <div class="text-danger" *ngIf="!password.valid && password.touched">
+                        <small *ngIf="password.errors.required">Password obligatoire</small>
+                        <small *ngIf="password.errors.pattern">Pattern!</small>
+                        <small *ngIf="password.errors.minlength">Password invalide</small>
+                      </div>                    </div>
+                  </div>
+                  <div class="form-group row">
+                      <div class="col-sm-6 mb-3 mb-sm-0">
+                        <label for="Role">Role</label>
+                        <select name="role" formControlName="role" class="form-control">
+                          <option value="user">User</option>
+                          <option value="admin">Admin</option>
+                          <option value="responsable">RESPONSABLE</option>
+                        </select>
+                        <div class="text-danger" *ngIf="!role.valid && role.touched">
+                          <small *ngIf="role.errors.required">Role obligatoire</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-primary" [disabled]="!registerForm.valid">inscription</button>
+                      <button type="reset" class="btnn btn-primary ">Annuler</button>
+                    </div>
+                </form>
+                <hr>
+                <div class="text-center">
+                  <a [routerLink]="['/login']">connecter à votre compte!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+

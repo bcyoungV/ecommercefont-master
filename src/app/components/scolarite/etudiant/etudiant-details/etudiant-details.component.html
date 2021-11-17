@@ -1,0 +1,105 @@
+<!-- Page Wrapper -->
+<div id="wrapper">
+  <!-- Sidebar -->
+  <app-sidebar></app-sidebar>
+  <!-- End of Sidebar -->
+
+  <!-- Content Wrapper -->
+   <div id="content-wrapper"  class="d-flex flex-column">
+    <!-- Main Content -->
+    <div id="content">
+      <!-- Topbar -->
+      <app-navbar></app-navbar>
+      <!-- End of Topbar -->
+
+      <!-- Begin Page Content -->
+      <div class="row-fluid" style="overflow-y: auto;">
+        <div class="panel-body">
+      <div class="container-fluid">
+        <!-- Page Heading -->
+        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+          <h1 class="h3 mb-0 text-gray-800">Gestion des Etudiants</h1>
+
+
+        </div>
+        <div class="row">
+          <div class="col">
+
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col"></div>
+        </div>
+
+        <div class="container-fluid">
+          <h2 class="text-center">
+            Détails d'un étudiant
+           <span class="badge badge-info">{{ etudiants?.length }}</span>
+          </h2>
+
+
+
+
+          <table class="table table-bordered">
+            <tbody>
+
+
+       <tr><th scope="row">ID</th>                <td>{{ etudiant.id }}</td> </tr>
+       <tr><th scope="row">Matricule</th>         <td>{{ etudiant.matricule }}</td> </tr>
+       <tr><th scope="row">CIN</th>               <td>{{ etudiant.cin }}</td> </tr>
+       <tr><th scope="row">Passeport</th>         <td>{{ etudiant.passeport }}</td> </tr>
+       <tr><th scope="row">Prenom Fr</th>         <td>{{ etudiant.prenomFr }}</td> </tr>
+       <tr><th scope="row">Nom Fr</th>            <td>{{ etudiant.nomFr }}</td> </tr>
+       <tr><th scope="row">Prenom Ar</th>         <td>{{ etudiant.prenomAr }}</td> </tr>
+       <tr><th scope="row">Nom Ar</th>            <td>{{ etudiant.nomAr }}</td> </tr>
+       <tr><th scope="row">Date Naissance</th>    <td>{{ etudiant.dateNaissance }}</td> </tr>
+       <tr><th scope="row">Lieu Naissance Fr</th> <td>{{ etudiant.lieuNaissanceFr }}</td> </tr>
+       <tr><th scope="row">Lieu Naissance Ar</th> <td>{{ etudiant.lieuNaissanceAr }}</td> </tr>
+       <tr><th scope="row">nationalite</th>      <td>{{ etudiant.nationnalite }}</td> </tr>
+       <tr><th scope="row">Pays Provenance</th>   <td>{{ etudiant.paysOrigine }}</td> </tr>
+       <tr><th scope="row">Adresse Fr</th>        <td>{{ etudiant.adresseFr }}</td> </tr>
+       <tr><th scope="row">Adresse Ar</th>        <td>{{ etudiant.adresseAr }}</td> </tr>
+       <tr><th scope="row">Telephone 1</th>       <td>{{ etudiant.telephone1 }}</td> </tr>
+       <tr><th scope="row">Telephone 2</th>       <td>{{ etudiant.telephone2 }}</td> </tr>
+       <tr><th scope="row">Telephone 3</th>       <td>{{ etudiant.telephone3 }}</td> </tr>
+       <tr><th scope="row">Email</th>             <td>{{ etudiant.email }}</td> </tr>
+       <tr><th scope="row">AutreInfo 1</th>       <td>{{ etudiant.autreInfo1 }}</td> </tr>
+       <tr><th scope="row">AutreInfo 2</th>       <td>{{ etudiant.autreInfo2 }}</td> </tr>
+       <tr><th scope="row">AutreInfo 3</th>       <td>{{ etudiant.autreInfo3 }}</td> </tr>
+       <tr><th scope="row">Gouvernorat</th>       <td>{{ etudiant.gouvernorat }}</td> </tr>
+       <tr><th scope="row">Etat Civil</th>        <td>{{ etudiant.etat_civil }}</td> </tr>
+       <tr><th scope="row">Pays Bac</th>          <td>{{ etudiant.paysBac }}</td> </tr>
+       <tr><th scope="row">Type Bac</th>          <td>{{ etudiant.typeBac }}</td> </tr>
+       <tr><th scope="row">Annee Bac</th>         <td>{{ etudiant.anneeBac }}</td> </tr>
+       <tr><th scope="row">Moyenne Bac</th>       <td>{{ etudiant.moyenneBac }}</td> </tr>
+       <tr><th scope="row">Score Bac</th>         <td>{{ etudiant.scoreBac }}</td> </tr>
+       <tr><th scope="row">Session Bac</th>       <td>{{ etudiant.sessionBac }}</td> </tr>
+       <tr><th scope="row">TypePassage Bac </th>  <td>{{ etudiant.typePassageBac }}</td> </tr>
+     </tbody>
+     </table>
+
+
+        </div>
+      </div>
+
+      <!-- /.container-fluid -->
+    </div>
+    <!-- End of Main Content -->
+
+    <!-- Footer -->
+    <footer class="sticky-footer bg-white">
+      <div class="container my-auto">
+        <div class="copyright text-center my-auto">
+          <span><p>Copyright © Ministère de l'Enseignement Supérieur et de la Recherche Scientifique - Tunisie</p></span>
+        </div>
+      </div>
+    </footer>
+    <!-- End of Footer -->
+  </div>
+  </div>
+  <!-- End of Content Wrapper -->
+</div>
+<!-- End of Page Wrapper -->
+
+

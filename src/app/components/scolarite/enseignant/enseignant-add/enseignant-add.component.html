@@ -1,0 +1,101 @@
+<div class="container">
+  <h2 class="my-3">Ajouter un enseignant</h2>
+  <form class="form" (ngSubmit)="onSubmit()">
+
+      <div class="form-group">
+          <label for="matricule">Matricule</label>
+          <input type="number" required [(ngModel)]="enseignant.matricule" name="matricule" placeholder="Matricule.." class="form-control">
+      </div>
+
+      <div class="form-group">
+        <label for="cin">Carte d'identité nationale</label>
+        <input type="text" required [(ngModel)]="enseignant.cin" name="cin" placeholder="Carte d'identité nationale.." class="form-control">
+    </div>
+
+      <div class="form-group">
+        <label for="passeport">Passeport</label>
+        <input type="text" required [(ngModel)]="enseignant.passeport" name="passeport" placeholder="Passeport" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="prenomFr">PrenomFr</label>
+      <input type="text" required [(ngModel)]="enseignant.prenomFr" name="prenomFr" placeholder="PrenomFr" class="form-control">
+  </div>
+
+  <div class="form-group">
+    <label for="nomFr">NomFr</label>
+    <input type="text" required [(ngModel)]="enseignant.nomFr" name="nomFr" placeholder="NomFr" class="form-control">
+</div>
+<div class="form-group">
+  <label for="prenomAr">PrenomAr</label>
+  <input type="text" required [(ngModel)]="enseignant.prenomAr" name="prenomAr" placeholder="PrenomAr" class="form-control">
+</div>
+<div class="form-group">
+  <label for="nomAr">NomAr</label>
+  <input type="text" required [(ngModel)]="enseignant.nomAr" name="nomAr" placeholder="NomAr" class="form-control">
+</div>
+<div class="form-group">
+  <label for="nationalite">Nationalite</label>
+  <input type="text" required [(ngModel)]="enseignant.nationnalite" name="nationalite" placeholder="Nationalite" class="form-control">
+</div>
+
+<div class="form-group">
+  <label for="paysOrigine">PaysOrigine</label>
+  <input type="text" required [(ngModel)]="enseignant.paysOrigine" name="paysOrigine" placeholder="PaysOrigine" class="form-control">
+</div>
+<div class="form-group">
+  <label for="dateNaissance">DateNaissance</label>
+  <input type="text" required [(ngModel)]="enseignant.dateNaissance" name="dateNaissance" placeholder="DateNaissance" class="form-control">
+</div>
+<div class="form-group">
+  <label for="lieuNaissanceFr">LieuNaissanceFr</label>
+  <input type="text" required [(ngModel)]="enseignant.lieuNaissanceFr" name="lieuNaissanceFr" placeholder="lieuNaissanceFr.." class="form-control">
+</div>
+
+<div class="form-group">
+  <label for="lieuNaissanceAr">LieuNaissanceAr</label>
+  <input type="text" required [(ngModel)]="enseignant.lieuNaissanceAr" name="lieuNaissanceAr" placeholder="lieuNaissanceAr.." class="form-control">
+</div>
+<div class="form-group">
+  <label for="adresseFr">AdresseFr</label>
+  <input type="text" required [(ngModel)]="enseignant.adresseFr" name="adresseFr" placeholder="AdresseFr.." class="form-control">
+</div>
+
+<div class="form-group">
+  <label for="adresseAr">AdresseAr</label>
+  <input type="text" required [(ngModel)]="enseignant.adresseAr" name="adresseAr" placeholder="AdresseAr.." class="form-control">
+</div>
+<div class="form-group">
+  <label for="telephone1">Telephone1</label>
+  <input type="text" required [(ngModel)]="enseignant.telephone1" name="telephone1" placeholder="Telephone1.." class="form-control">
+</div>
+
+<div class="form-group">
+  <label for="telephone2">Telephone2</label>
+  <input type="text" required [(ngModel)]="enseignant.telephone2" name="telephone1" placeholder="Telephone2.." class="form-control">
+</div>
+<div class="form-group">
+  <label for="email">Email</label>
+  <input type="text" required [(ngModel)]="enseignant.email" name="email" placeholder="Email.." class="form-control">
+</div>
+
+<div class="form-group">
+  <label for="autreInfo1">AutreInfo1</label>
+  <input type="text" required [(ngModel)]="enseignant.autreInfo1" name="autreInfo1" placeholder="AutreInfo1.." class="form-control">
+</div>
+
+<div class="form-group">
+  <label for="gouvernorat">Gouvernorat</label>
+  <input type="text" required [(ngModel)]="enseignant.gouvernorat" name="gouvernorat" placeholder="Gouvernorat.." class="form-control">
+</div>
+
+<div class="form-group">
+  <label for="etat_civil ">Etat_civil </label>
+  <input type="text" required [(ngModel)]="enseignant.etat_civil " name="etat_civil " placeholder="Etat_civil .." class="form-control">
+</div>
+      <div class="form-group">
+          <button type="submit" class="btn btn-primary"  >Ajouter</button>
+
+      </div>
+  </form>
+</div>

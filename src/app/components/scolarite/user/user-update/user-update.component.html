@@ -1,0 +1,36 @@
+ <!--   Topbar -->
+ <app-navbar></app-navbar>
+ <!-- End of Topbar -->
+<div class="container">
+  <form class="form" (ngSubmit)="onSubmit()">
+    <h2 class="my-3">Modifier utilisateur</h2>
+      <div class="form-group">
+          <label for="name">Nom d'utilisateur</label>
+          <input type="text" [(ngModel)]="user.name" name="name" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" [(ngModel)]="user.username" name="username" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="text" [(ngModel)]="user.email" name="email" class="form-control">
+  </div>
+
+<div class="form-group">
+  <label for="etat">Etat</label>
+  <input type="text" [(ngModel)]="user.etat" name="etat" class="form-control">
+</div>
+      <div class="form-group">
+          <button type="submit" class="btn btn-primary">Modifier</button>
+      </div>
+  </form>
+</div>
+
+<footer class="sticky-footer bg-white">
+  <div class="container my-auto">
+    <div class="copyright text-center my-auto">
+      <span><p>Copyright © Ministère de l'Enseignement Supérieur et de la Recherche Scientifique - Tunisie</p></span>
+    </div>
+  </div>
+</footer>

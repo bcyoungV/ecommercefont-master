@@ -1,0 +1,63 @@
+<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+    <!-- Sidebar - Brand -->
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <div class="sidebar-brand-icon rotate-n-15">
+
+        </div>
+
+    </a>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider my-0">
+
+    <!-- Nav Item - Dashboard -->
+    <li class="nav-item active">
+        <a class="nav-link" routerLink="/scolarite/dashboard">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Accueil</span></a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <li class="nav-item active" *ngIf="isAdmin">
+
+      <a class="nav-link" routerLink="/scolarite/etudiant/list">
+        <i class="fas fa-fw fa-tachometer-alt"></i>
+        <span>Gestion des Etudiants</span></a>
+    </li>
+    <li class="nav-item active" *ngIf="isAdmin">
+
+      <a class="nav-link" routerLink="/scolarite/groupe/list">
+        <i class="fas fa-fw fa-tachometer-alt"></i>
+        <span>Gestion des Groupes</span></a>
+    </li>
+
+    <li class="nav-item active" *ngIf="isAdmin">
+
+      <a class="nav-link" routerLink="/scolarite/enseignant/list">
+        <i class="fas fa-fw fa-tachometer-alt"></i>
+        <span>Gestion des Enseignants</span></a>
+    </li>
+    <li class="nav-item active" *ngIf="isResponsable">
+
+      <a class="nav-link" routerLink="/scolarite/module/list">
+        <i class="fas fa-fw fa-tachometer-alt"></i>
+        <span>Gestion des unités d'enseignements</span></a>
+    </li>
+    <li class="nav-item active" *ngIf="isResponsable">
+
+      <a class="nav-link" routerLink="/scolarite/matiere/list">
+        <i class="fas fa-fw fa-tachometer-alt"></i>
+        <span>Gestion des éléments d'enseignements </span></a>
+    </li>
+
+    <li class="nav-item active" *ngIf="isAdministrateur">
+
+      <a class="nav-link" routerLink="/scolarite/user/list">
+        <i class="fas fa-fw fa-tachometer-alt"></i>
+        <span>Gestion des Utilisateurs</span></a>
+    </li>
+
+  </ul>

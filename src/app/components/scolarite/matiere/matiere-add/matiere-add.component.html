@@ -1,0 +1,53 @@
+<div class="container">
+  <h2 class="my-3">Ajouter un élément d'enseignement </h2>
+  <form class="form" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+          <label for="libelleFr">Libelle_Fr</label>
+          <input type="text" required [(ngModel)]="matiere.libelleFr" name="libelleFr" placeholder="libelle_fr.." class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="libelleAr">Libelle_Ar</label>
+        <input type="text" required [(ngModel)]="matiere.libelleAr" name="libelleAr" placeholder="libelle_ar.." class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="credit">Credit</label>
+      <input type="number" required [(ngModel)]="matiere.credit" name="credit" placeholder="Credit.." class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="coef">Coef</label>
+    <input type="number" required [(ngModel)]="matiere.coef" name="coef" placeholder="Coef.." class="form-control">
+</div>
+<div class="form-group">
+  <label for=" volume"> Volume</label>
+  <input type="number" required [(ngModel)]="matiere.volume" name="volume" placeholder="volume.." class="form-control">
+</div>
+<div class="form-group">
+  <label for=" tp"> Travaux pratiques</label>
+  <input type="number" required [(ngModel)]="matiere.tp" name="tp" placeholder="Travaux pratiques.." class="form-control">
+</div>
+<div class="form-group">
+  <label for=" td"> Travaux dirigés</label>
+  <input type="number" required [(ngModel)]="matiere.td" name="td" placeholder="Travaux dirigés.." class="form-control">
+</div>
+<div class="form-group">
+  <label for=" cours"> Cours</label>
+  <input type="number" required [(ngModel)]="matiere.cours" name="cours" placeholder="Cours.." class="form-control">
+</div>
+<div class="form-group">
+  <label for="coursIntegre">coursIntegre</label>
+  <input type="number" required [(ngModel)]="matiere.coursIntegre" name="coursIntegre" placeholder="coursIntegre.." class="form-control">
+</div>
+
+      <div class="form-group">
+          <button type="submit" class="btn btn-primary"  >Ajouter</button>
+      </div>
+  </form>
+</div>
+
+
+
+
+
+
+
+

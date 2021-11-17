@@ -1,0 +1,18 @@
+.btnn{
+  font-size: 15px;
+  font-weight: bold;
+  margin: 9px;
+  padding: 6px;
+  border: aliceblue;
+  background-color: aliceblue;
+}
+.mm{
+  background-color: aquamarine(55, 153, 97);
+}
+.btn {
+font-size: 15px;
+font-weight: bold;
+}
+.container{
+background-color: white;
+}

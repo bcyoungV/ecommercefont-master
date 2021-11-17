@@ -1,0 +1,52 @@
+<div class="mm">
+
+  <div class="container">
+
+      <div class="card o-hidden border-0 shadow-lg my-5">
+        <div class="card-body p-0">
+          <!-- Nested Row within Card Body -->
+          <td><img src="assets/images/banner_home.jpg" alt="enseignement superieur" width="1115" height="100"></td>
+          <div class="row">
+            <img class="col-lg-5" src="assets/images/minstere.jpg">
+            <div class="col-lg-7">
+              <div class="p-5">
+                <div class="text-center">
+                  <h1 class="h4 text-gray-900 mb-4">Connecter à votre compte</h1>
+                </div>
+
+                <form class="user" [formGroup]="loginForm" (ngSubmit)="login()">
+                  <div class="form-group">
+                    <input type="text" name="username" formControlName="username" class="form-control form-control-user"  placeholder="Entrée Nom d'utilisateur...">
+                    <div *ngIf="username?.touched && !username?.valid" class="text-danger">
+                        <small *ngIf="username.errors.required">Nom d'utilisateur obligatoire</small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" formControlName="password" class="form-control form-control-user"  placeholder="Entrée Mot de passe...">
+                    <div *ngIf="password.touched && !password.valid" class="text-danger">
+                        <small *ngIf="password.errors.required">Mot de passe obligatoire</small>
+                        <small *ngIf="password.errors.minlength">Mot de passe invalide</small>
+                    </div>
+                </div>
+
+
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-user btn-block" [disabled]="loginForm.invalid">Connexion</button>
+            </div>
+
+
+            </form>
+                <hr>
+
+                <div id="footer">
+                  <p>Copyright © Ministère de l'Enseignement Supérieur et de la Recherche Scientifique - Tunisie</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+</div>
+

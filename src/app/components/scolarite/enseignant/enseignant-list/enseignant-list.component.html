@@ -1,0 +1,106 @@
+<!-- Page Wrapper -->
+<div id="wrapper">
+
+  <!-- Sidebar -->
+  <app-sidebar></app-sidebar>
+  <!-- End of Sidebar -->
+
+  <!-- Content Wrapper -->
+  <div id="content-wrapper" class="d-flex flex-column">
+
+    <!-- Main Content -->
+    <div id="content">
+
+      <!-- Topbar -->
+      <app-navbar></app-navbar>
+      <!-- End of Topbar -->
+
+      <!-- Begin Page Content -->
+      <div class="container-fluid">
+
+        <!-- Page Heading -->
+        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+          <h1 class="display-4"h3 mb-0 text-gray-800>Gestion des Enseignants</h1>
+
+        </div>
+        <div class="row">
+            <div class="col">
+
+                <button class="btn btn-primary mb-3" (click)="ajouter()">Ajouter </button>
+
+            </div>
+        </div>
+        <div class="row">
+          <div class="col">
+
+          </div>
+      </div>
+
+
+
+      <div class="col-xl-8 col-lg-7 col-sm-12 col-xs-12">
+        <h2 class="text-center">Liste des enseignants <span class="badge badge-info">{{enseignants?.length}}</span></h2>
+
+        <table class="table table-bordered text-center">
+          <thead>
+            <tr>
+
+                <th scope="col">Matricule</th>
+                  <th scope="col">Carte d'identité nationale</th>
+
+                      <th scope="col">Prénom_Fr</th>
+                        <th scope="col">Nom_Fr</th>
+                                 <th scope="col">Telephone1</th>
+
+
+                                 <th scope="col" *ngIf="isAdmin">Actions</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr *ngFor="let enseignant of enseignants">
+
+                <td>{{enseignant.matricule}}</td>
+                <td>{{enseignant.cin}}</td>
+
+                <td>{{enseignant.prenomFr}}</td>
+
+
+                <td>{{enseignant.telephone1}}</td>
+
+                <td>{{enseignant.email}}</td>
+
+                <td *ngIf="isAdmin">
+                  <button class="btn btn-success btn-sm" [routerLink]="['/scolarite/enseignant/details',enseignant.id]">Consulter</button>
+                  <button class="btn btn-warning btn-sm mx-2" [routerLink]="['/scolarite/enseignant/update',enseignant.id]">Modifier</button>
+                  <button class="btn btn-danger btn-sm" (click)="deleteEnseignant(enseignant)">Supprimer</button>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+      <!-- /.container-fluid -->
+
+    </div>
+    <!-- End of Main Content -->
+
+    <!-- Footer -->
+    <footer class="sticky-footer bg-white">
+      <div class="container my-auto">
+        <div class="copyright text-center my-auto">
+          <span><p>Copyright © Ministère de l'Enseignement Supérieur et de la Recherche Scientifique - Tunisie</p></span>
+        </div>
+      </div>
+    </footer>
+    <!-- End of Footer -->
+
+  </div>
+  <!-- End of Content Wrapper -->
+
+</div>
+<!-- End of Page Wrapper -->
+
+

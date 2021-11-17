@@ -1,0 +1,80 @@
+ <!--   Topbar -->
+ <app-navbar></app-navbar>
+ <!-- End of Topbar -->
+
+<div class="container">
+  <form class="form" (ngSubmit)="onSubmit()">
+    <h2 class="my-3">Modifier un étudiant</h2>
+
+    <div class="form-group">
+      <label for="matricule">Matricule</label>
+      <input type="text" [(ngModel)]="etudiant.matricule" name="matricule" class="form-control">
+  </div>
+
+  <div class="form-group">
+    <label for="passeport">Passeport</label>
+    <input type="text" [(ngModel)]="etudiant.passeport" name="passeport" class="form-control">
+</div>
+
+
+
+      <div class="form-group">
+        <label for="cin">Carte nationale d'identité</label>
+        <input type="text" [(ngModel)]="etudiant.cin" name="cin" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="prenomFr">Prenom_Fr</label>
+      <input type="text" [(ngModel)]="etudiant.prenomFr" name="prenomFr" class="form-control">
+  </div>
+
+  <div class="form-group">
+    <label for="nomFr">NomFr</label>
+    <input type="text" [(ngModel)]="etudiant.nomFr" name="nomFr" class="form-control">
+</div>
+<div class="form-group">
+  <label for="dateNaissance">DateNaissance</label>
+  <input type="text" [(ngModel)]="etudiant.dateNaissance" name="dateNaissance" class="form-control">
+</div>
+<div class="form-group">
+  <label for="lieuNaissanceFr">LieuNaissanceFr</label>
+  <input type="text" [(ngModel)]="etudiant.lieuNaissanceFr" name="LieuNaissanceFr" class="form-control">
+</div>
+
+
+<div class="form-group">
+  <label for="adresseFr">Adresse_Fr</label>
+  <input type="text" [(ngModel)]="etudiant.adresseFr" name="adresseFr" class="form-control">
+</div>
+
+
+<div class="form-group">
+  <label for="telephone1">Telephone1</label>
+  <input type="text" [(ngModel)]="etudiant.telephone1" name="telephone1" class="form-control">
+</div>
+<div class="form-group">
+  <label for="email">Email</label>
+  <input type="text" [(ngModel)]="etudiant.email" name="email" class="form-control">
+</div>
+
+<div class="form-group">
+  <label for="etat_civil">Etat_civil</label>
+  <input type="text" [(ngModel)]="etudiant.etat_civil" name="etat_civil" class="form-control">
+</div>
+      <div class="form-group">
+          <button type="submit" class="btn btn-primary">Modifier</button>
+      </div>
+  </form>
+</div>
+
+<footer class="sticky-footer bg-white">
+  <div class="container my-auto">
+    <div class="copyright text-center my-auto">
+      <span><p>Copyright © Ministère de l'Enseignement Supérieur et de la Recherche Scientifique - Tunisie</p></span>
+    </div>
+  </div>
+</footer>
+
+
+
+

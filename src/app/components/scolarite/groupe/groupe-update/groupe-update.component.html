@@ -1,0 +1,32 @@
+ <!--   Topbar -->
+ <app-navbar></app-navbar>
+ <!-- End of Topbar -->
+
+
+<div class="container">
+  <form class="form" (ngSubmit)="onSubmit()">
+    <h2 class="my-3">Modifier le groupe</h2>
+      <div class="form-group">
+          <label for="nom">Nom du groupe</label>
+          <input type="text" [(ngModel)]="groupe.nom" name="nom" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="nom">Limite max</label>
+        <input type="text" [(ngModel)]="groupe.capacite" name="capacite" class="form-control">
+    </div>
+
+      <div class="form-group">
+          <button type="submit" class="btn btn-primary">Modifier</button>
+      </div>
+  </form>
+</div>
+
+
+<footer class="sticky-footer bg-white">
+  <div class="container my-auto">
+    <div class="copyright text-center my-auto">
+      <span><p>Copyright © Ministère de l'Enseignement Supérieur et de la Recherche Scientifique - Tunisie</p></span>
+    </div>
+  </div>
+</footer>
+

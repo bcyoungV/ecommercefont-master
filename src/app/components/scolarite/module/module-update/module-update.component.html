@@ -1,0 +1,44 @@
+ <!--   Topbar -->
+ <app-navbar></app-navbar>
+ <!-- End of Topbar -->
+
+<div class="container">
+  <form class="form" (ngSubmit)="onSubmit()">
+    <h2 class="my-3">Modifier module </h2>
+      <div class="form-group">
+          <label for="libelleFr">libelleFr</label>
+          <input type="text" [(ngModel)]="module.libelleFr" name="libelleFr" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="libelleAr">libelleAr</label>
+        <input type="text" [(ngModel)]="module.libelleAr" name="libelleAr" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="credit">credit</label>
+      <input type="number" [(ngModel)]="module.credit" name="credit" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="coef">coef</label>
+    <input type="number" [(ngModel)]="module.coef" name="coef" class="form-control">
+</div>
+<div class="form-group">
+  <label for="semestre">semestre</label>
+  <input type="number" [(ngModel)]="module.semestre" name="semestre" class="form-control">
+</div>
+
+
+      <div class="form-group">
+          <button type="submit" class="btn btn-primary">Modifier</button>
+      </div>
+  </form>
+</div>
+
+<footer class="sticky-footer bg-white">
+  <div class="container my-auto">
+    <div class="copyright text-center my-auto">
+      <span><p>Copyright © Ministère de l'Enseignement Supérieur et de la Recherche Scientifique - Tunisie</p></span>
+    </div>
+  </div>
+</footer>
+

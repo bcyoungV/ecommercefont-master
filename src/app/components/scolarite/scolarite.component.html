@@ -1,0 +1,32 @@
+<div class="container-fluid">
+  <div class="row my-3">
+    <div class="col-xl-4 col-lg-5 col-sm-12 col-xs-12">
+      <h2 class="text-center">Liste des groupes <span class="badge badge-info">{{groupes?.length}}</span></h2>
+      <button *ngIf="isAdmin" class="btn btn-primary btn-sm my-1" [routerLink]="['/ajouter-groupe']">Ajouter un groupe </button>
+      <table class="table table-bordered text-center">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nom</th>
+            <th>max capacite</th>
+            <th *ngIf="isAdmin">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let groupe of groupes">
+              <td>{{groupe.id}}</td>
+              <td>{{groupe.nom}}</td>
+              <td>{{groupe.capacite}}</td>
+
+
+              <td *ngIf="isAdmin">
+                <button class="btn btn-warning btn-sm mx-2" [routerLink]="['/modifier-groupe',groupe.id]">Modifier</button>
+                <button class="btn btn-danger btn-sm" (click)="deleteGroupe(groupe)">Supprimer</button>
+              </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</div>

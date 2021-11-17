@@ -1,0 +1,61 @@
+ <!--   Topbar -->
+ <app-navbar></app-navbar>
+ <!-- End of Topbar -->
+
+<div class="container">
+  <form class="form" (ngSubmit)="onSubmit()">
+    <h2 class="my-3">Modifier une matière</h2>
+      <div class="form-group">
+          <label for="libelleFr">libelleFr</label>
+          <input type="text" [(ngModel)]="matiere.libelleFr" name="libelleFr" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="libelleAr">Libelle_Ar</label>
+        <input type="text" [(ngModel)]="matiere.libelleAr" name="libelleAr" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="credit">Credit</label>
+      <input type="number" [(ngModel)]="matiere.credit" name="credit" class="form-control">
+  </div>
+
+  <div class="form-group">
+    <label for="coef">Coefficient</label>
+    <input type="number" [(ngModel)]="matiere.coef" name="coef" class="form-control">
+</div>
+<div class="form-group">
+  <label for="volume">Volume</label>
+  <input type="number" [(ngModel)]="matiere.volume" name="volume" class="form-control">
+</div>
+<div class="form-group">
+  <label for="tp">Travaux Pratique</label>
+  <input type="number" [(ngModel)]="matiere.tp" name="tp" class="form-control">
+</div>
+
+<div class="form-group">
+  <label for="td">Travaux Dirigés</label>
+  <input type="number" [(ngModel)]="matiere.td" name="td" class="form-control">
+</div>
+<div class="form-group">
+  <label for="cours">Cours</label>
+  <input type="number" [(ngModel)]="matiere.cours" name="cours" class="form-control">
+</div>
+<div class="form-group">
+  <label for="coursIntegre">CoursIntegre</label>
+  <input type="number" [(ngModel)]="matiere.coursIntegre" name="coursIntegre" class="form-control">
+</div>
+      <div class="form-group">
+          <button type="submit" class="btn btn-primary">Modifier</button>
+      </div>
+  </form>
+</div>
+
+<footer class="sticky-footer bg-white">
+  <div class="container my-auto">
+    <div class="copyright text-center my-auto">
+      <span><p>Copyright © Ministère de l'Enseignement Supérieur et de la Recherche Scientifique - Tunisie</p></span>
+    </div>
+  </div>
+</footer>
+
+
+

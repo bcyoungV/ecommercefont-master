@@ -1,0 +1,132 @@
+ <!--   Topbar -->
+ <app-navbar></app-navbar>
+ <!-- End of Topbar -->
+<div class="container">
+  <form class="form" (ngSubmit)="onSubmit()">
+    <h2 class="my-3">Modifier l'enseignant</h2>
+
+      <div class="form-group">
+          <label for="matricule">Matricule</label>
+          <input type="number" [(ngModel)]="enseignant.matricule" name="matricule" class="form-control">
+      </div>
+      <div class="form-group">
+          <div class="row">
+              <div class="col-xs-6 col-lg-6">
+                  <label for="cin">Carte nationale d'identité  </label>
+                  <input type="text" [(ngModel)]="enseignant.cin" name="cin" class="form-control">
+              </div>
+              <div class="col-xs-6 col-lg-6">
+                <label for="passeport">Passeport</label>
+                <input type="text" [(ngModel)]="enseignant.passeport" name="passeport" class="form-control">
+            </div>
+
+            <div class="col-xs-6 col-lg-6">
+              <label for="prenomFr">PrenomFr</label>
+              <input type="text" [(ngModel)]="enseignant.prenomFr" name="prenomFr" class="form-control">
+          </div>
+          <div class="col-xs-6 col-lg-6">
+            <label for="prenomAr">PrenomAr</label>
+            <input type="text" [(ngModel)]="enseignant.prenomAr" name="prenomAr" class="form-control">
+        </div>
+
+        <div class="col-xs-6 col-lg-6">
+          <label for="nomFr">NomFr</label>
+          <input type="text" [(ngModel)]="enseignant.nomFr" name="nomFr" class="form-control">
+      </div>
+
+      <div class="col-xs-6 col-lg-6">
+        <label for="nomAr">NomAr</label>
+        <input type="text" [(ngModel)]="enseignant.nomAr" name="nomAr" class="form-control">
+    </div>
+
+    <div class="col-xs-6 col-lg-6">
+      <label for="nationnalite">Nationnalite</label>
+      <input type="text" [(ngModel)]="enseignant.nationnalite" name="nationnalite" class="form-control">
+  </div>
+
+  <div class="col-xs-6 col-lg-6">
+    <label for="paysOrigine">PaysOrigine</label>
+    <input type="text" [(ngModel)]="enseignant.paysOrigine" name="paysOrigine" class="form-control">
+</div>
+
+<div class="col-xs-6 col-lg-6">
+  <label for="dateNaissance">dateNaissance</label>
+  <input type="date" [(ngModel)]="enseignant.dateNaissance" name="dateNaissance" class="form-control">
+</div>
+
+<div class="col-xs-6 col-lg-6">
+  <label for="lieuNaissanceFr">LieuNaissanceFr</label>
+  <input type="text" [(ngModel)]="enseignant.lieuNaissanceFr" name="lieuNaissanceFr" class="form-control">
+</div>
+
+<div class="col-xs-6 col-lg-6">
+  <label for="lieuNaissanceAr">LieuNaissanceAr</label>
+  <input type="text" [(ngModel)]="enseignant.lieuNaissanceAr" name="lieuNaissanceAr" class="form-control">
+</div>
+
+<div class="col-xs-6 col-lg-6">
+  <label for="adresseFr">AdresseFr</label>
+  <input type="text" [(ngModel)]="enseignant.adresseFr" name="adresseFr" class="form-control">
+</div>
+
+<div class="col-xs-6 col-lg-6">
+  <label for="adresseAr">AdresseAr</label>
+  <input type="text" [(ngModel)]="enseignant.adresseAr" name="adresseAr" class="form-control">
+</div>
+
+<div class="col-xs-6 col-lg-6">
+  <label for="telephone1">Telephone1</label>
+  <input type="text" [(ngModel)]="enseignant.telephone1" name="telephone1" class="form-control">
+</div>
+
+
+<div class="col-xs-6 col-lg-6">
+  <label for="telephone2">Telephone2</label>
+  <input type="text" [(ngModel)]="enseignant.telephone2" name="telephone2" class="form-control">
+</div>
+
+<div class="col-xs-6 col-lg-6">
+  <label for="email">Email</label>
+  <input type="text" [(ngModel)]="enseignant.email" name="email" class="form-control">
+</div>
+<div class="col-xs-6 col-lg-6">
+  <label for="autreInfo1">AutreInfo1</label>
+  <input type="text" [(ngModel)]="enseignant.autreInfo1" name="autreInfo1" class="form-control">
+</div>
+
+<div class="col-xs-6 col-lg-6">
+  <label for="gouvernorat">Gouvernorat</label>
+  <input type="number" [(ngModel)]="enseignant.gouvernorat" name="gouvernorat" class="form-control">
+</div>
+
+
+<div class="col-xs-6 col-lg-6">
+  <label for="etat_civil ">Etat_civil </label>
+  <input type="text" [(ngModel)]="enseignant.etat_civil " name="etat_civil " class="form-control">
+</div>
+          </div>
+      </div>
+
+
+      <div class="form-group">
+          <button type="submit" class="btn btn-primary">Modifier</button>
+      </div>
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

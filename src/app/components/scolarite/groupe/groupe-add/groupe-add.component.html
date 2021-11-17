@@ -1,0 +1,18 @@
+<div class="container">
+  <h2 class="my-3">Ajouter un groupe</h2>
+  <form class="form" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+          <label for="nom">Nom du groupe</label>
+          <input type="text" required [(ngModel)]="groupe.nom" name="nom" placeholder="Nom du groupe.." class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="capacite">capacite</label>
+        <input type="number" required [(ngModel)]="groupe.capacite" name="capacite" placeholder="maximum autorisé" class="form-control">
+    </div>
+
+      <div class="form-group">
+          <button type="submit" class="btn btn-primary" >Ajouter</button>
+      </div>
+  </form>
+</div>
+
